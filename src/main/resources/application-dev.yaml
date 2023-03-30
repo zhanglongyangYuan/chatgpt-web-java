@@ -29,7 +29,7 @@ chat:
   # 访问密码
   auth_secret_key: 123456
   # OpenAI API Key - https://platform.openai.com/overview
-  openai_api_key: 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
+  openai_api_key: sk-xxx
   # change this to an `accessToken` extracted from the ChatGPT site's `https://chat.openai.com/api/auth/session` response
   openai_access_token: xxx
   # OpenAI API Base URL - https://api.openai.com/，要加/后缀
