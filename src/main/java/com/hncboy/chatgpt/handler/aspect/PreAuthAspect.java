@@ -52,9 +52,9 @@ public class PreAuthAspect {
 
         RequestAttributes requestAttributes = Optional.ofNullable(RequestContextHolder.getRequestAttributes()).orElseThrow(() -> new ServiceException("request is null"));
         String authorization = ServletUtil.getHeader(((ServletRequestAttributes) requestAttributes).getRequest(), "Authorization", StandardCharsets.UTF_8);
-        if (StrUtil.isBlank(authorization) || !authorization.replace("Bearer ", "").trim().equals(chatConfig.getAuthSecretKey().trim())) {
-            throw new AuthException("Error: 无访问权限 | No access rights");
-        }
+//        if (StrUtil.isBlank(authorization) || !authorization.replace("Bearer ", "").trim().equals(chatConfig.getAuthSecretKey().trim())) {
+//            throw new AuthException("Error: 无访问权限 | No access rights");
+//        }
 
         return point.proceed();
     }
